@@ -4,7 +4,7 @@ title: "My tech blog"
 description: "This is where I write anything I find useful"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-baseurl: 'blog'
+baseurl: '/blog'
 google_analytics: ''
 disqus: 'myblog'
 include: ["_pages"]
