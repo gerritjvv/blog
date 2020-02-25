@@ -321,6 +321,17 @@ a solution.
 
 
 
+## Iteration N + 3
+
+Implementing:
+
+```
+c = combinations( S )
+subsets = distinct( map(Set, c ) )
+```
+
+
+
 
 Important show:
 

@@ -303,13 +303,37 @@ var testData = []struct {
 	},
 }
 
-func Test_combinations(t *testing.T) {
+func Test_PowerSet(t *testing.T) {
 
+	subsets := PowerSet([]string{"a", "b", "c"})
+
+	var data = map[string]bool{
+		"{a}":     true,
+		"{b}":     true,
+		"{c}":     true,
+		"{a,b}":   true,
+		"{a,c}":   true,
+		"{a,b,c}": true,
+		"{b,c}":   true,
+	}
+
+	if len(subsets) != 7 {
+		t.Fatalf("subets must be of length 7\n")
+	}
+
+	for _, set := range subsets {
+		ok := data[set.String()]
+		if !ok {
+			t.Fatalf("the subset %v cannot be found in the data map", set)
+		}
+	}
+}
+
+func Test_combinations(t *testing.T) {
 
 	for _, testRecord := range testData {
 
-		var subsets [][]string
-		subsets = Combinations(testRecord.input, subsets)
+		subsets := Combinations(testRecord.input)
 
 		if len(subsets) != len(testRecord.data) {
 			t.Fatalf("expected length of %d but got %d\n", len(testRecord.data), len(subsets))
@@ -331,21 +355,6 @@ func arrayOfArraysEquals(s1 [][]string, s2 [][]string) bool {
 	for i := 0; i < len(s1); i++ {
 		if !arraysEquals(s1[i], s2[i]) {
 			fmt.Printf("%v != %v\n", s1[i], s2[i])
-			return false
-		}
-	}
-
-	return true
-}
-
-func arraysEquals(s1 []string, s2 []string) bool {
-
-	if len(s1) != len(s2) {
-		return false
-	}
-
-	for i := 0; i < len(s1); i++ {
-		if s1[i] != s2[i] {
 			return false
 		}
 	}
