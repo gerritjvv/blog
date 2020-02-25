@@ -238,7 +238,9 @@ If not then we have to think up a way to generate all the combinations for any s
 
 So we start a new thought process and go back to step 1 again:
 
+
 ### Step 1 -- combinations
+
 
 Problem statement:
 
