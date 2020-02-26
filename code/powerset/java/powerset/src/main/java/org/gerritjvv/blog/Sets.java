@@ -31,9 +31,6 @@ public class Sets {
     /**
      * Returns all the possible combinations of a list of strings
      * {"a", "b", "c"}  => [{a, b, c}, {a, a, c} ... ]
-     * <p>
-     * We could return a List of Sets here but then combination will not be as
-     * per the definition in our blog post
      */
     public static <T> List<T[]> combinations(T[] set) {
         int indices[] = new int[set.length];

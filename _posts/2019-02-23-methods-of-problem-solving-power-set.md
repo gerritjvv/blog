@@ -3,7 +3,7 @@ layout: post
 title:  "Methods of problem solving - Power Set"
 author: gerritjvv
 categories: [ problem-solving, reasoning]
-image: assets/images/aes-encryption-keys-password-hashing.jpg
+image: assets/images/volodymyr-hryshchenko-inI8GnmS190-unsplash.jpg
 featured: true
 ---
 
@@ -11,74 +11,71 @@ featured: true
 # Overview
 
 In this post I explore several methods of solving the same problem. The interesting part here is not the actual problem 
-but the method used to solve it.
+but the methods used to solve it.
 
-I think of method here as a path towards a solution. So from now on I'll refer to problem solving as solution finding.
+I chose the power set of a set as the problem to solve, because it seemed interesting, and is normally far from the every
+day problems we programmers need to solve. Why on earth would you choose that then? you might ask. Well its simple, it is
+a programming problem, but being something that we do not frequently solve, we cannot just pull a solution from memory.
 
-## Why?
+
+## Why study the actual method?
 
 We learn mostly to solve problems by practice, which is good, but we rarely stop to think about the actions taken in the solution finding.
 
 By not taking the time to reflect on the actual process we risk making solution finding an almost by chance or random action. We know how to solve X
-but how to solve y and z?. There is one big risk here though, by making a process out of something we risk making it dull i.e non creative
-and avoid looking at other angles which my lead to even better solutions. There is never a silver bullet unfortunately.  
+but how to solve Y and Z ?.  
 
 
-## Power set
+## Solving for the Power set
 
 As an example I'll use the problem of generating the [Power Set](https://en.wikipedia.org/wiki/Power_set) of any given set, to show and study
 how different methods can be applied in solving it.
-
- For any set S, the power set is all the subsets of S.
- For example:
- 
- ```
- PowerSet of S={a, b, c}
- 
- Is: {a}, {a, c}, {a, b, c}, {a, b}, {b}, {b, c}, {c}, {}
- 
- The length of a power set is 2^n where n = len(S)
- ```
  
 # By visual observation and discovery
 
 This is the most common means of approaching solution finding. We try to model the elements and processes of the problem and then
 visualise what transformations needs to be applied to reach the solution.
 
-Here the following items are important:
+We make use of the following tools:
 
   * [Abstraction](https://en.wikipedia.org/wiki/Abstraction)
   * Visual diagrams or drawings
-  * Notation either mathematical or pseudo code 
+  * Notation, either mathematical or pseudo code 
 
 The method:
   
-  1. Write down the problem statement, and the desired solution  
+  1. Write down the problem statement, and the desired solution.  
      * In this step research is important. Study the problem space, check for existing solutions and studies on solutions.
-     * Search engines, books, papers, existing open source code can help.
-     * Be careful here not to immediately converge on a solution. Existing solutions can narrow our mindset down to a single
-     solution and hinder us from exploring more.
+     * Be careful here not to immediately converge on a solution. We are exploring.
    
-  2. We divide the problem and solution into elements and processes  
-  3. Visualise the different steps from starting state to the solution state
-  4. Maybe write out transformations visually or in pseudo code form
-     * Here we might draw several Hypothesis and try them out, its through trial and error that we normally find good transformations
-  5. Reflect on similarities, patterns, commonalities
-  6. And repeat
-     * Repeat normally at step 3, but a repeat of step 1 or 2 might be needed several times
+  2. Divide the problem and solution into elements and processes.  
+  
+  3. Visualise the different steps from starting state to the solution state.
+  
+  4. Maybe write out transformations visually or in pseudo code form.
+     * Here we might draw several Hypothesis and try them out, its through trial and error that we normally find good transformations.
+  
+  5. Reflect on similarities, patterns, commonalities.
+  
+  6. And repeat.
+     * Repeat normally at step 3, but a repeat of step 1 or 2 might be needed several times.
   
 
-The method is an open cycle that is only stopped once we feel comfortable (objective) that we:
-  * understand the problem at hand
-  * the processes defined reaches a solution
-  * and that the processes are repeatable for any similar problem, i.e we can generalize it
+The method is an open cycle that is only stopped once we feel comfortable that we:
+  * Understand the problem at hand.
+  * The processes defined reaches a solution.
+  * And that the processes are repeatable for any similar problem.
 
-## Iteration 1 - N
+## Iteration 1
 ### Step 1
 
 Write down the problem statement and desired solution:
 
 ```
+
+ For any set S, the power set is all the subsets of S.
+ For example:
+
  PowerSet of S={a, b, c}
  
  Is: {a}, {a, c}, {a, b, c}, {a, b}, {b}, {b, c}, {c}, {}
@@ -95,15 +92,15 @@ Write down the problem statement and desired solution:
 ### Step 2, 3, 4 & 5
 
 
-We can observe that the solution involves one of set combinations, i.e somewhere we had to start at
-all the combinations (permutations) of a, b, c and then narrow down to the final solution.
+We can observe that the solution involves one of combinations/permutations, i.e somewhere we had to start at
+all the combinations of a, b, c and then narrow down to the final solution.
 
-So we write it down all the different ways we can write `[a, b, c]`:
+So we write down all the different ways we can write `[a, b, c]`:
 
 The total number of different ways a list `[a, b, c]` can be written down is:
 
 ```
-N x N x N => n^n
+n x n x n => n^n
 Where n is the number of items in the list
 
 i.e [a, b, c] can be written down 3 x 3 x 3 => 3^3 => 27 times.
@@ -144,9 +141,7 @@ i.e [a, b, c] can be written down 3 x 3 x 3 => 3^3 => 27 times.
 
 ```
 
-And we count them to make sure there's no error, here we need 27.
-
-If we take from the description that the powerset made up of sets of S. We can try to apply a "set" transformation to each
+If we take from the description that the powerset is made up of sets of S. We can try to apply a "set" transformation to each
 combination.
 
 ```
@@ -181,8 +176,10 @@ combination.
 26 = [ c, c, c ]  => Set => {c}
 ```
 
-We notice that there are many duplicates, and we can learn or know that for two sets to be equal they only need
-to contain the same elements, and order does not matter, i.e `{a, b} == {b, c}`.
+We notice that there are many duplicates, and we know that for two sets to be equal they only need
+to contain the same elements, and order does not matter, i.e  
+ 
+ `{a, b} == {b, c}`.
 
 So we remove the duplicates: 
 
@@ -197,23 +194,26 @@ So we remove the duplicates:
 ```
 
 This together with the empty set `{}` gives us the power set.
-We can test with:
+
+We can check with:  
+
  The number of sets should be 2^N - 1 which is `2^3 - 1 => 8 - 1 => 7` 
 
 #### Note on steps:
 
 It took me several iterations, a few errors and a jog on the treadmill to come to the final explanation above.
 Solution finding is a search problem where you can run into many dead ends or work on false or errored calculations.
+This is normal and even a required part of the solution finding process.    
 
-Its important to lay down your thinking in steps, work through the results, rest, comeback and rework and so on.
-
+Its important to lay down your thinking in steps, work through the results, rest, comeback, rework and so on.
+Do not rush. Solutions finding should be done at a walking pace, and never at a running pace.  
 
 ## Iteration N + 1
 
 Pseudo code time:
 
 
-We can build from the discoveries above and write this down in simple processes:
+We can build from the discoveries above and write this down in simple pseudo code:
 
 1. Take a set
 2. Generate all combinations 
@@ -232,14 +232,17 @@ subsets = distinct( map(Set, c ) )
 ## Iteration N + 2
 
 If your language of choice has a library to generate the combinations, and or would support some basic
-functional programming the translation above is easy.
+functional programming the translation above is easy. 
 
-If not then we have to think up a way to generate all the combinations for any set we need:
+But where is the fun in that? So I will assume there is none or that we just want to learn and see if we 
+can apply the same process above to generating all combinations.
+
 
 So we start a new thought process and go back to step 1 again:
 
+### Iteration N -- combinations
 
-### Step 1 -- combinations
+#### Step 1 -- combinations
 
 
 Problem statement:
@@ -270,11 +273,26 @@ Problem statement:
      
 ### Step 2, 3, 4 & 5 -- combinations
 
-  We can try and model the above with indices, where we have:  
-    a list of n indices `[x, y, z]`, the value of each index points to the letter in the list `[a, b, c]`.  
+  We can try and model the above with indices, where we have: 
+   
+    a list of n indices [x, y, z],
     
-  We iterate over all the possible values of z from 0 to 2, and when we reach 2 we increment y and set z = 0, if y is == 2
-  we increment x and set y to 0. When x > 2 we stop.
+    the value of each index points to the letter in the list  
+    [a, b, c]
+    
+    Where [0, 0, 0] means [a, a, a] and [1, 1, 1] means [b, b, b]   
+    
+  We iterate over all the possible values of z from 0 to 2:
+    
+    [x, y, 0]
+    [x, y, 1]
+    [x, y, 2]
+            
+   
+  and when we reach 2 we increment `y` and set `z = 0`, if `y == 2`
+  we increment `x` and set `y to 0`.  
+  
+  When `x > 2` we stop.
   
   ```
    [a, a, a]  => Indices => [0, 0, 0]
@@ -285,35 +303,36 @@ Problem statement:
    [a, b, b]  => Indices => [0, 1, 1]
    [a, b, c]  => Indices => [0, 1, 2]
      
-   [a, c, a]  => Indices => [0, 3, 0]
+   [a, c, a]  => Indices => [0, 2, 0]
    [a, c, b]  => Indices => [0, 0, 1]
    [a, c, c]  => Indices => [0, 0, 2]
         
    [b, a, a]  => Indices => [1, 0, 0]
+   ...
+   [c, c, c]  => Indices => [2, 2, 2]
+      
   ```
+### Iteration N + 1 -- combinations
 
-### pseudo code
+Pseudo code
 
-  For a set S the possible combinations with order and repetitions are:
-    l = list of integers at 0 of len S
-    
    ```
-    l = createIndicesAtZero(len = len(S) )
+    indices = createIndicesAtZero(len = len(S) )
     maxI = len(S) - 1
           
-    while l[0] < len(S):
+    while indices[0] < len(S):
         
-      if l[maxI] > maxI:
+      if indices[maxI] > maxI:
           ;; when we reach the max counter value, scan backwards carrying over the 1 increment
              
-          ;; scan through all indices except l[0], l[i-1] will increment it
+          ;; scan through all indices except indices[0], indices[i-1] will increment it
           for i = maxI; i > 0; i--: 
-            if l[i] > maxI:
-               l[i-1]++ ;; increment next
-               l[i] = 0 ;; reset
+            if indices[i] > maxI:
+               indices[i-1]++ ;; increment next
+               indices[i] = 0 ;; reset
       else:
-        print copyFromIndices( S, l )
-        l[maxI]++
+        print copyFromIndices( S, indices )
+        indices[maxI]++
             
    ```
    
@@ -323,7 +342,7 @@ a solution.
 
 
 
-## Iteration N + 3
+## Iteration N + 3 -- back to the Power Set
 
 Implementing:
 
