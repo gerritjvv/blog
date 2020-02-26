@@ -6,13 +6,15 @@ import org.junit.runners.Parameterized;
 
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+/**
+ * Tests the powerset is calculated correctly in Set
+ */
 @RunWith(Parameterized.class)
-public class SetsTest {
+public class PowerSetTests {
 
     @Parameterized.Parameters
     public static Collection<TestRecord> data() {
@@ -36,20 +38,18 @@ public class SetsTest {
 
     TestRecord testRecord;
 
-    public SetsTest(TestRecord testRecord) {
+    public PowerSetTests(TestRecord testRecord) {
         this.testRecord = testRecord;
     }
 
     @Test
-    public void test() {
+    public void testSetsPowerSets() {
         List<Set<String>> subSets = Sets.powerSets(testRecord.data).collect(Collectors.toList());
 
         assertEquals(testRecord.expected.size(), subSets.size());
 
 
-        subSets.forEach(s -> {
-           assertTrue(testRecord.expected.contains(s));
-        });
+        subSets.forEach(s -> assertTrue(testRecord.expected.contains(s)));
     }
 
     public static final class TestRecord {
@@ -60,8 +60,8 @@ public class SetsTest {
             this.data = data;
 
             List<Set<String>> l = new ArrayList<>();
-            for (int i = 0; i < expected.length; i++) {
-                l.add(Sets.asSet(expected[i]));
+            for (String[] strings : expected) {
+                l.add(Sets.asSet(strings));
             }
 
             this.expected = l;

@@ -1,10 +1,7 @@
 package org.gerritjvv.blog;
 
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Stream;
 
 public class Sets {
@@ -18,9 +15,6 @@ public class Sets {
      *   subsets = distinct( map(Set, c ) )
      *
      * </pre>
-     * @param set
-     * @param <T>
-     * @return
      */
     public static <T> Stream<Set<T>> powerSets(T[] set) {
 
@@ -33,9 +27,9 @@ public class Sets {
      * {"a", "b", "c"}  => [{a, b, c}, {a, a, c} ... ]
      */
     public static <T> List<T[]> combinations(T[] set) {
-        int indices[] = new int[set.length];
+        final int[] indices = new int[set.length];
 
-        int l = set.length;
+        final int l = set.length;
 
         List<T[]> subSets = new ArrayList<>();
         int maxI = set.length - 1;
@@ -58,16 +52,14 @@ public class Sets {
         return subSets;
     }
 
-    public static final <T> Set<T> asSet(T[] set) {
+    public static <T> Set<T> asSet(T[] set) {
         Set<T> hashSet = new HashSet<>();
-        for (int i = 0; i < set.length; i++) {
-            hashSet.add(set[i]);
-        }
+        Collections.addAll(hashSet, set);
 
         return hashSet;
     }
 
-    private static final <T> T[] copyFromIndices(T[] set, int[] indices) {
+    private static <T> T[] copyFromIndices(T[] set, int[] indices) {
 
         T[] subSet = (T[]) Array.newInstance(set[0].getClass(), indices.length);
 
