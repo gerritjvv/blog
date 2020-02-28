@@ -39,3 +39,10 @@
         maxI (dec l)]
 
     (-combinations s indices l maxI)))
+
+
+(defn powerset [s]
+  (->> s
+      combinations
+      (map set)
+       distinct))
