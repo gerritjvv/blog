@@ -10,15 +10,16 @@ featured: true
 
 # Overview
 
-In this post I explore several methods of solving the same problem. The interesting part here is not the actual problem 
-but the methods used to solve it.
+In this post series I explore several methods of solving the same problem using an iterative process.     
+The interesting part here is not the actual problem but the process used to solve it.  
+
 
 I chose the power set of a set as the problem to solve, because it seemed interesting, and is normally far from the every
 day problems we programmers need to solve. Why on earth would you choose that then? you might ask. Well its simple, it is
 a programming problem, but being something that we do not frequently solve, we cannot just pull a solution from memory.
 
 
-## Why study the actual method?
+## Why study the actual process?
 
 We learn mostly to solve problems by practice, which is good, but we rarely stop to think about the actions taken in the solution finding.
 
@@ -351,20 +352,30 @@ c = combinations( S )
 subsets = distinct( map(Set, c ) )
 ```
 
+You can find the implementation code with tests here:
+
+  * Java https://github.com/gerritjvv/blog/tree/post-power-set/code/powerset/java/powerset
+  * Go https://github.com/gerritjvv/blog/tree/post-power-set/code/powerset/go
 
 
+# Summary 
 
-Important show:
+So even though we might get lost in thought of the actual problem itself, I hope that I could show a simple
+but practical method for solution finding itself.
 
-Elaborate on the above in step notation
+There are other ways to visualise the problem and a multitude of solutions.
+The ideal way is to study the solution with multiple visualisation techniques and look at it from various angles,
 
-also in set notation
-S = { {x, y, z} | x ∈ {a, b, c}, y ∈ {a,b,c}, z ∈ {a,b,c}, {x,y,z} ∉ S }  
+E.g If we look at the Power Set result, we can see that the actual subsets may be represented by binary numbers
+that increase from zero to N.
 
-# By finding patterns from other domains
+Some of the techniques that can be used to explore any problem space are:
 
-# By recursive functions bottom up
+ * By finding patterns from other domains
+ * By recursive functional approach
+ * Tree presentations
+ * Set constructors
+ 
 
-```clojure
+I'll cover these in my next  blog posts.
 
-```
