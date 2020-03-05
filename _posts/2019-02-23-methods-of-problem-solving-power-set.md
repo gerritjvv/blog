@@ -4,7 +4,6 @@ title:  "Methods of problem solving - Power Set"
 author: gerritjvv
 categories: [ problem-solving, reasoning]
 image: assets/images/volodymyr-hryshchenko-inI8GnmS190-unsplash.jpg
-featured: true
 ---
 
 
@@ -377,5 +376,6 @@ Some of the techniques that can be used to explore any problem space are:
  * Set constructors
  
 
-I'll cover these in my next  blog posts.
+These are topics for another blog post :).
+
 
