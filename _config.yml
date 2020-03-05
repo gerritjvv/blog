@@ -6,13 +6,13 @@ logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: '/blog'
 google_analytics: ''
-disqus: 'myblog'
+disqus: ''
 include: ["_pages"]
 permalink: /:title/
 
 # Authors
 authors:
-  sal:
+  gerritjvv:
     name: Gerrit
     display_name: gerritjvv
     gravatar: 
@@ -42,8 +42,8 @@ paginate_path: /page:num/
     
 # Other
 markdown: kramdown
-
 kramdown:
+  parse_block_html: true
   input: GFM
   syntax_highlighter: rouge
   syntax_highlighter_opts:

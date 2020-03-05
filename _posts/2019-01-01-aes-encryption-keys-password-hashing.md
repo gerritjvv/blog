@@ -1,10 +1,9 @@
 ---
 layout: post
 title:  "AES Encryption Keys (password hashing)"
-author: sal
+author: gerritjvv
 categories: [ encryption, password ]
 image: assets/images/aes-encryption-keys-password-hashing.jpg
-featured: true
 ---
 
 
