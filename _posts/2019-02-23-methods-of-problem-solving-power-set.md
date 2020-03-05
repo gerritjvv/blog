@@ -353,8 +353,9 @@ subsets = distinct( map(Set, c ) )
 
 You can find the implementation code with tests here:
 
-  * Java https://github.com/gerritjvv/blog/tree/post-power-set/code/powerset/java/powerset
-  * Go https://github.com/gerritjvv/blog/tree/post-power-set/code/powerset/go
+  * [Java](https://github.com/gerritjvv/blog/tree/post-power-set/code/powerset/java/powerset)
+  * [Clojure](https://github.com/gerritjvv/blog/tree/post-power-set/code/powerset/clojure/powerset)
+  * [Go](https://github.com/gerritjvv/blog/tree/post-power-set/code/powerset/go)
 
 
 # Summary 
