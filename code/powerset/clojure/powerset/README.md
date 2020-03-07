@@ -1,6 +1,9 @@
 # powerset
 
 
+Example code from https://gerritjvv.github.io/blog/methods-of-problem-solving-power-set/   
+
+
 ## Installation
 
 Download from https://github.com/blog/powerset.
