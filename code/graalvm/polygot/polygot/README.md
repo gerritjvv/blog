@@ -42,8 +42,29 @@ Person('Jack', 21)
 
 ## Python to Java and back
 
-  1. You have a Python class you and want to return it to Java and have Java call methods on it and 
-then send it back to Python
+### Create a Python Object, return it to Java and functions on it
+
+From Python:
+
+```python
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+                  
+p = Person('Jack', 30)
+p
+```
  
- 
-  2. You have a Python class  and you want to create instances of it in Java and send it to Python.
+From Java:
+
+```java
+Value pyPerson = eval(...);
+
+System.out.println("pyPerson getMember(name): " + pyPerson.getMember("name"));
+//pyPerson getMember(name): 'Jack'
+
+pyPerson.putMember("age", 22);
+System.out.println("pyPerson getMember(age): " + pyPerson.getMember("age"));
+//pyPerson getMember(age): 22
+```
