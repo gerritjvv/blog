@@ -16,6 +16,11 @@ ways of passing and receiving objects, from Java to Python and from Python to Ja
 
 ## Java to Python and back
 
+#### Maps and Lists
+
+Maps, Arrays and Lists need to be wrapped in a ProxyObject or ProxyArray interface to be use-able 
+in Python as native objects arrays and lists.
+
 #### Create a Java object and call methods on it from Python 
 then returning a Java class from Python to Java.
 
@@ -41,6 +46,14 @@ Person('Jack', 21)
 ````
 
 ## Python to Java and back
+
+#### Maps and Lists
+
+Python lists can be cast to the Collection, List, Iterable Java interfaces.
+
+Python dictionaries can be cast to the Map Java interface. 
+
+Gets work as expected, but keySet does not, and returns the truffle object proxy methods.
 
 ### Create a Python Object, return it to Java and functions on it
 
