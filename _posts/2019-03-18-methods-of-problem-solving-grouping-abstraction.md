@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Methods of problem solving - simplification"
+title:  "Methods of problem solving - simplification (2)"
 author: gerritjvv
 categories: [ problem-solving, reasoning]
 image: assets/images/michael-dziedzic-dSyhpTGhNHg-unsplash.jpg

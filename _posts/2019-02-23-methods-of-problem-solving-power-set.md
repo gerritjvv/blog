@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Methods of problem solving - Power Set"
+title:  "Methods of problem solving - Power Set (1)"
 author: gerritjvv
 categories: [ problem-solving, reasoning]
 image: assets/images/volodymyr-hryshchenko-inI8GnmS190-unsplash.jpg
