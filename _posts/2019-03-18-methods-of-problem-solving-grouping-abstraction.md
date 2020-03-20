@@ -40,7 +40,7 @@ Lets forget about points first and just get Gradient1, and Gradient2. If they ar
 
 This simplifies our reasoning quite a bit and our algorithm:
 
-````python
+```python
 
 If we have points [a, b, c ,d ,e ,f]
 
@@ -55,7 +55,7 @@ Compare
 
 Calc G1 from d, e and G2 e, f
 Compare
-````
+```
 
 We can see from the above that, we start at a point, then take 2 more, shift by one, and take two more,
 until we either find two gradients that are the same, or till we can't take 3 points anymore.
