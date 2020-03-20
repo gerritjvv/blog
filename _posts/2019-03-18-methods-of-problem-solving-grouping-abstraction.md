@@ -1,19 +1,19 @@
 ---
 layout: post
-title:  "Methods of problem solving - Grouping"
+title:  "Methods of problem solving - simplification"
 author: gerritjvv
 categories: [ problem-solving, reasoning]
-image: assets/images/volodymyr-hryshchenko-inI8GnmS190-unsplash.jpg
+image: assets/images/michael-dziedzic-dSyhpTGhNHg-unsplash.jpg
 ---
 
 ## Overview
 
 In this post I'm going to explore a technique that I find useful when dealing with many many variables.
-Its used an mathematics  all the time and is quite simple.
+It's used an mathematics all the time and is quite simple.
 
 There is only so much information the human brain can hold in one line of thought. So the idea is to group
 several variables that form a single concept, lets call it A, into that concept A. Then in our design and reasoning
-we can refer to that single concept A.  
+we can refer to that single concept A. 
 
 ## Example -- Solving for 3 points in a line
 
@@ -77,3 +77,10 @@ gradients(i, points):
 I hope that you could see from the above simple example, how useful this technique can be.
 Its simple, if you have several small related points that complicates your thinking, group them into a single concept
 and then reasoning at this higher level about the problem.
+
+# More reading
+
+  * https://betterexplained.com/articles/learning-to-learn-math-abstraction/
+  * http://worrydream.com/LadderOfAbstraction/
+  * https://en.wikipedia.org/wiki/Generalization
+  * https://en.wikipedia.org/wiki/Abstraction
