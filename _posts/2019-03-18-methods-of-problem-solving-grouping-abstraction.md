@@ -12,7 +12,7 @@ In this post I'm going to explore a technique that I find useful when dealing wi
 It's used an mathematics all the time and is quite simple.
 
 There is only so much information the human brain can hold in one line of thought. So the idea is to group
-several variables that form a single concept, lets call it A, into that concept A. Then in our design and reasoning
+several variables that form a single concept, lets call it A=`{v1, v2...}, into that concept A. Then in our design and reasoning
 we can refer to that single concept A. 
 
 ## Example -- Solving for 3 points in a line
