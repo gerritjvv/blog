@@ -20,10 +20,10 @@ a programming problem, but being something that we do not frequently solve, we c
 **Note on performance**
 
 The solution devised here, work well for small numbers of `n < 7`. 
-This is because its based of generating all possible combinations and thus has a complexity of `O(n^n)`.
+This is because its based of generating all possible combinations and thus has a complexity of `O(n^k)`.
 
 I do strongly believe that is is more important to first understand the problem at hand, and have analysed it
-from multiple angles, before trying to design the most optimum solutions. People might agree or not agree, but the focus
+from multiple angles, before trying to design the most optimum solution. People might agree or not agree, but the focus
 of this article is "methods of thinking". We will at a later stage go over complexity analysis. 
 
 
