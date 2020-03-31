@@ -19,7 +19,7 @@ a programming problem, but being something that we do not frequently solve, we c
 
 **Note on performance**
 
-The solution devised here, work well for small numbers of `n < 7`. 
+The solution devised here, works well only for small numbers of `n < 7`. 
 This is because its based of generating all possible combinations and thus has a complexity of `O(n^k)`.
 
 I do strongly believe that is is more important to first understand the problem at hand, and have analysed it
