@@ -17,6 +17,15 @@ I chose the power set of a set as the problem to solve, because it seemed intere
 day problems we programmers need to solve. Why on earth would you choose that then? you might ask. Well its simple, it is
 a programming problem, but being something that we do not frequently solve, we cannot just pull a solution from memory.
 
+**Note on performance**
+
+The solution devised here, work well for small numbers of `n < 7`. 
+This is because its based of generating all possible combinations and thus has a complexity of `O(n^n)`.
+
+I do strongly believe that is is more important to first understand the problem at hand, and have analysed it
+from multiple angles, before trying to design the most optimum solutions. People might agree or not agree, but the focus
+of this article is "methods of thinking". We will at a later stage go over complexity analysis. 
+
 
 ## Why study the actual process?
 
