@@ -4,7 +4,7 @@ title:  "Collatz Conjecture"
 author: gerritjvv
 featured: true
 categories: [ problem-solving, numbers, maths ]
-image: assets/images/charlotte-coneybeer-R8Oakk_lLP8-unsplash.jpg
+image: assets/images/Collatz-stopping-time.svg.png
 ---
 
 
