@@ -58,19 +58,9 @@ Use: list(collatz(10))
 
 The following reasoning I will use proof by example for all my reasoning.
 
+# Exploratory
 
-1. Any multiple of 2 when halved recursively will not end in 1.
-
-  Proof by contradiction:
-  ```
-  2 halved is 1. 
-  4 halved is 2 halved is 1.
-  
-  6 halved is 3 is odd <-- Contradiction by example
-  
-  8 halved is 4 halved is 2 halved is 1
-  ```
-2.  Any number in the 'series' of 2x when halved recursively will end in 1.
+## Any number in the 'series' of 2x when halved recursively will end in 1.
 
   Proof and helper code:
   
@@ -101,7 +91,7 @@ The following reasoning I will use proof by example for all my reasoning.
    => [2, 4, 8, 16, 32, 64, 128, 256, 512, 1024]
   ```
   
-3. Odd + Odd + Odd + 1 is Even
+## Odd + Odd + Odd + 1 is Even
 
  Proof:
  
@@ -253,7 +243,7 @@ We know by proof of example that 10 or 5 can reduce to 1 when applied to the col
 ```
 
 
-To sum up:
+# Summary
 
 ````
 Starting at any number and applying the collatz function will always end in 1 because:  
