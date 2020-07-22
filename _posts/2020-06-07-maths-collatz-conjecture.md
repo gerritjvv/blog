@@ -58,7 +58,10 @@ Use: `list(collatz(10))`
 
 The following is my reasoning on different properties and ideas with regards to the conjecture.
 A loose method of Proof by induction is used at times and at others I just explore the ideas.
- 
+
+When I say `proof`, do take it lightly, its more my mind trying to reach one than an actual formally validated
+and peer reviewed proof.
+
 
 # Exploratory
 
@@ -302,19 +305,17 @@ We know by proof of example that 10 or 5 can reduce to 1 when applied to the col
 
 # Summary
 
-````
 Starting at any number and applying the collatz function will always end in 1 because:  
   
-  For any odd number:
+For any odd number:
       when applied to x*3+1 we get a unique even number, which is a multiple of 6. 
       multiples of 6 going forward will eventually reach a multiple of 10 in 5 steps.
       multiples of 10 when halved when even and divided by 5 when odd will eventually reach 10 or 5.
       we know by proof of example that 10 and 5 when applied to the collatz function reduce to 1.
   
-  For any even number:
+For any even number:
       when applied to x/2 we get either an odd number, which case we follow the logic above, 
       or yet another even number, if its an even number always we will eventually get to 10,8,6,4 or 2, 
       which we know when applied to the collatz dunctiona reduce to 1.
        
-````
 
