@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Towers of Complexity"
+title:  "Complexity"
 author: gerritjvv
 featured: true
 categories: [ programming, design, architecture ]
