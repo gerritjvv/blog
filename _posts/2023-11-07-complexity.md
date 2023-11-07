@@ -7,8 +7,6 @@ categories: [ programming, design, architecture ]
 image: assets/images/sawdust.jpg
 ---
 
-# see https://htmx.org/essays/locality-of-behaviour/ 
-
 ## Overview
 
 ```
@@ -195,3 +193,6 @@ filled with dirt (the project repository), and you either cleanup or need to fin
 
 This "clean up" process is neglected in the software engineering process when planning tasks and time.
 
+### Further reading
+
+* https://htmx.org/essays/locality-of-behaviour/ 
