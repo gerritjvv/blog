@@ -4,9 +4,9 @@ title: "My tech blog"
 description: "This is where I write anything I find useful"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-baseurl: '/blog'
+baseurl: ""
 url: "https://blog.thepolyglot.net"
-google_analytics: ''
+google_analytics: 'G-56N82CP9RE'
 disqus: ''
 include: ["_pages"]
 permalink: /:title/
