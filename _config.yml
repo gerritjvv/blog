@@ -5,6 +5,7 @@ description: "This is where I write anything I find useful"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: '/blog'
+url: "https://blog.thepolyglot.net"
 google_analytics: ''
 disqus: ''
 include: ["_pages"]
