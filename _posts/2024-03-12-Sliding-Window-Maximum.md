@@ -12,8 +12,6 @@ The sliding window is an interesting problem where you need to apply several adv
 to give an optimum solution.  There are many resources for solving this problem, but as with all puzzles and problems, the usefulness
 lies in developing a method for solving problems rather than the solution itself.
 
-Look back at [Methods of problem-solving](methods-of-problem-solving-power-set) for the steps we will take.
-
 
 # 1.  Problem statement
 
