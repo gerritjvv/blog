@@ -49,7 +49,7 @@ We make use of the following tools:
 
   * [Abstraction](https://en.wikipedia.org/wiki/Abstraction)
   * Visual diagrams or drawings
-  * Notation, either mathematical or pseudo code 
+  * Notation, either mathematical or pseudocode 
 
 The method:
   
