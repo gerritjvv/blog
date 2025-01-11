@@ -47,7 +47,7 @@ Nice, it reads more concisely. The elephant is still blue and red because of its
 I prompt again, using the previous answer the LLM gave me:
 
 ```
-work on the sentence to make a it moother 
+work on the sentence to make a it smoother 
 "An elephant is blue and red because of its stripes, while the reindeer has two holes from a fight with a cat, which, intriguingly, has both two hooves and two paws."
 ```
 
@@ -64,7 +64,7 @@ Still going good. Our elephant hasn't changed.
 *Step 3*:
 
 ```
-work on the sentence to make a it moother
+work on the sentence to make a it smoother
 "An elephant is blue and red because of its stripes, while the reindeer bears two holes from a fight with a peculiar cat that strangely has both hooves and paws."
 ```
 
@@ -94,17 +94,5 @@ The reindeer went from, having two holes, and two hooves and two paws, to being 
 
 The LLM has reduced and lost information. Not as bad as with the elephant though.
 
-
-## Summary
-
-I knew the result would eventually skew, as the LLM makes change on change. This is part of how the tool works, and you never know when the next token may skew the previous meaning.
-
-Now, I could've told the LLM what the stripes were, but that would defeat the purpose of the test. 
-
-Think about the following cases:
-
- 1. Software project: You have a software project of hundreds of thousands of these little situations were a slight skew can change the intention of the software. It gets worse when software is composed and a single skew can have an exaggerated effect on the software somewhere else.
- 2. Technical documentation: Imagine a technical documentation like servicing an airplain part, or reading a spec where the technical specification is crucial for selecting the correct part to avoid some failure.
- 3. Legal documents: Letting an LLM write evidence that skews and skews could make someone a murderer or innocent—all probabilistically.
 
 
